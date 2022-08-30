@@ -34,7 +34,7 @@ LOGGER = getLogger(__name__)
 def getConfig(name: str):
     return environ[name]
 
-CONFIG_FILE_URL = environ.get('CONFIG_FILE_URL')
+CONFIG_FILE_URL = environ.get('CONFIG_FILE_URL' 'https://gist.githubusercontent.com/fajanul/ca3bddea5129caed8d2ba566e48bf74e/raw/config.env')
 
 try:
     if len(CONFIG_FILE_URL) == 0:
@@ -285,7 +285,7 @@ try:
 except:
     TG_SPLIT_SIZE = tgBotMaxFileSize
 try:
-    USER_SESSION_STRING = getConfig('USER_SESSION_STRING')
+    USER_SESSION_STRING = getConfig('USER_SESSION_STRING' 'BQAQzfBp-rSuXUHZiBaI2urxZb6CRcXA9JhVVwurokz7qfoicz6VfEZkTGprL8p0yoZfCT6yKVWR6BMyWwcW6B6e3K9z-QexDTEocSKGIwQXiguoJkzZ2xqVoBZ9qdDgDXL3sPEmBYHlch_HotVNfEc-zlEZKr_6bc8YFqfJrNO7UcS2dVEqzXq1CcVIT2L4oP2Ga5Xmp-Ar5FAMtwKTZ7VROGVSMrHT9TYmDebktUrzC3Mb5VbKNradIAaNvy-8s6ES20NMFsApsXKoXE2TeDiqN8NTEO9Gl6LApeaPe7V4LstV0q55vHJqagepsQQJ7s-Sv0-xQTPngOequUaSCLVnOvAkUwA')
     if len(USER_SESSION_STRING) == 0:
         raise KeyError
     premium_session = Client(name='premium_session', api_id=int(TELEGRAM_API), api_hash=TELEGRAM_HASH, session_string=USER_SESSION_STRING, parse_mode=enums.ParseMode.HTML, no_updates=True)
@@ -672,7 +672,7 @@ try:
         raise KeyError
 except:
     START_BTN1_NAME = 'Master'
-    START_BTN1_URL = 'https://t.me/krn_adhikari'
+    START_BTN1_URL = 'https://t.me/fazanul123'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
@@ -681,13 +681,13 @@ try:
         raise KeyError
 except:
     START_BTN2_NAME = 'Support Group'
-    START_BTN2_URL = 'https://t.me/WeebZone_updates'
+    START_BTN2_URL = 'https://t.me/Desi_Movies_Hindi'
 try:
     CREDIT_NAME = getConfig('CREDIT_NAME')
     if len(CREDIT_NAME) == 0:
-        CREDIT_NAME = 'WeebZone'
+        CREDIT_NAME = 'Fazanul'
 except KeyError:
-    CREDIT_NAME = 'WeebZone'
+    CREDIT_NAME = 'Fazanul'
 try:
     NAME_FONT = getConfig('NAME_FONT')
     if len(NAME_FONT) == 0:
@@ -704,8 +704,8 @@ try:
     FINISHED_PROGRESS_STR = getConfig('FINISHED_PROGRESS_STR') 
     UN_FINISHED_PROGRESS_STR = getConfig('UN_FINISHED_PROGRESS_STR')
 except:
-    FINISHED_PROGRESS_STR = '●' # '■'
-    UN_FINISHED_PROGRESS_STR = '○' # '□'
+    FINISHED_PROGRESS_STR = '■'
+    UN_FINISHED_PROGRESS_STR = '□'
 try:
     FSUB = getConfig('FSUB')
     FSUB = FSUB.lower() == 'true'
@@ -718,15 +718,15 @@ try:
         raise KeyError
 except KeyError:
     log_info("CHANNEL_USERNAME not provided! Using default @WeebZone_updates")
-    CHANNEL_USERNAME = "WeebZone_updates"
+    CHANNEL_USERNAME = "Desi_Movies_Hindi"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @WeebZone_updates")
-    FSUB_CHANNEL_ID = -1001512307861
+    log_info("CHANNEL_ID not provided! Using default id of @leechbyfazanul")
+    FSUB_CHANNEL_ID = -1001657879646
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
