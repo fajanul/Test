@@ -441,11 +441,11 @@ help_admin = telegraph.create_page(
 def bot_help(update, context):
     button = ButtonMaker()
     if EMOJI_THEME is True:
-        button.buildbutton("👤 User", https://t.me/Desi_Movies_Hindi")
-        button.buildbutton("🛡️ Admin", https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("👤 User", "https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("🛡️ Admin", "https://t.me/Desi_Movies_Hindi")
     else:
-        button.buildbutton("User", https://t.me/Desi_Movies_Hindi")
-        button.buildbutton("Admin", https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("User", "https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("Admin", "https://t.me/Desi_Movies_Hindi")
     sendMarkup(help_string, context.bot, update.message, InlineKeyboardMarkup(button.build_menu(2)))
 
        
