@@ -330,7 +330,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://github.com/codewithweeb/mirror-with-weeb'>WeebZone</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://github.com/codewithweeb/mirror-with-weeb'>fazanul</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
 Choose a help category:
 '''
 
@@ -407,7 +407,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SpeedCommand}</b>: Speedtest of Heroku server
 <br><br>
-• <b>/weebhelp</b>: Okatu helper
+• <b>/fazanulhelp</b>: Okatu helper
 '''
 
 help_user = telegraph.create_page(
@@ -441,11 +441,11 @@ help_admin = telegraph.create_page(
 def bot_help(update, context):
     button = ButtonMaker()
     if EMOJI_THEME is True:
-        button.buildbutton("👤 User", f"https://graph.org/{help_user}")
-        button.buildbutton("🛡️ Admin", f"https://graph.org/{help_admin}")
+        button.buildbutton("👤 User", https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("🛡️ Admin", https://t.me/Desi_Movies_Hindi")
     else:
-        button.buildbutton("User", f"https://graph.org/{help_user}")
-        button.buildbutton("Admin", f"https://graph.org/{help_admin}")
+        button.buildbutton("User", https://t.me/Desi_Movies_Hindi")
+        button.buildbutton("Admin", https://t.me/Desi_Movies_Hindi")
     sendMarkup(help_string, context.bot, update.message, InlineKeyboardMarkup(button.build_menu(2)))
 
        
